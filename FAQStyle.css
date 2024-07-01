@@ -1,0 +1,624 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-family:Century expanded;
+}
+
+body{
+    background:url('bg2.png');
+    background-size: cover;
+    
+}
+
+/* *******************Navbar******************* */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5em;
+  }
+  
+  #logo {
+    width:6.4rem;
+    height: 6.4rem;
+    border: 0.23rem solid yellow;
+    border-radius: 15%;
+    margin-top: 0.6rem;
+  }
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    width: 0;
+    height: 0.2rem;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -0rem;
+    transition: 0.5s;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: white;
+    /* font-size: 2rem; */
+  }
+  
+  
+/* *************FAQ section**************** */
+
+#FAQ{
+    padding-top:2rem;
+    color:white;
+}
+
+.row{
+    display: flex;
+    padding-top:1.3rem;
+    height:82vh;
+}
+
+.FAQ-col-1{
+    flex-basis: 50%;
+}
+
+h3{
+    font-size:2.5rem;
+    margin-left:7rem;
+}
+
+span{
+    color: yellow;
+}
+
+#img1{
+    width:23rem;
+    height:21rem;
+    background-size: cover;
+    margin-top:1.8rem;
+    margin-left: 5rem;
+    border-radius: 2rem;
+    border: 0.4rem solid yellow;
+}
+
+.FAQ-col-2{
+    flex-basis: 50%;
+    margin-top: 1.3rem;
+    box-shadow: 0 0 1rem rgb(236, 250, 39);
+    margin:1.3rem 5rem;
+    padding-left: 1.8rem;
+    overflow-y: auto; /* Add this property for a scrollbar */
+    /* max-height: 600px;  */
+    height: 28rem; /* Set a fixed height for the container */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    border: 0.2rem solid #ccc;
+    
+}
+
+.FAQ-col-2::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+
+  .FAQ-col-2::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 1rem;
+  }
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq{
+    /* max-width: 600px; */
+    margin-top: 1.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid white;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h4{
+    font-size: 1.3rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition:max-height 1.4s ease;
+}
+
+.answer p{
+    padding-top:0.5rem;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.faq.active .answer{
+    max-height:12rem;
+    animation:fade 1s ease-in-out;
+}
+
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition:transform 0.5s ease-in;
+}
+
+@keyframes fade {
+    from{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+.FAQ-col-1 img {
+    transition: transform 0.1s ease-in-out;
+}
+
+.FAQ-col-1 img:hover {
+    transform: scale(0.9);
+}
+
+/* footer part */
+
+footer{
+    width:100%;
+    height:3rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 1rem rgb(236, 250, 39);
+  }
+  
+  #p1{
+    font-size: 1rem;
+    padding-top: 1rem;
+    color:white;
+    text-align: center;
+  
+  }
+
+@media (max-width:1330px){
+    #FAQ{
+        padding-top:8rem;
+        color:white;
+    }
+    .row{
+        display: flex;
+        padding-top:1.3rem;
+        height:88vh;
+    }
+@media (max-width:1280px) {
+    @media (max-width:1150px) {
+        #img1{
+            width:22rem;
+            height:22rem;
+            background-size: cover;
+            margin-top:1.8rem;
+            margin-left: 5rem;
+            border-radius: 2rem;
+            border: 0.4rem solid yellow;
+        }
+    }
+    @media (max-width:1100px){
+        h3{
+            font-size:2.5rem;
+            margin-left:4.8rem;
+        }
+        #img1{
+            width:22rem;
+            height:22rem;
+            background-size: cover;
+            margin-top:1.8rem;
+            margin-left: 3.5rem;
+            border-radius: 2rem;
+            border: 0.4rem solid yellow;
+        }
+        .FAQ-col-2{
+            flex-basis: 50%;
+            margin-top: 1.3rem;
+            box-shadow: 0 0 1rem rgb(236, 250, 39);
+            margin:1rem 3rem;
+            padding-left: 1.8rem;
+            overflow-y: auto; /* Add this property for a scrollbar */
+            /* max-height: 600px;  */
+            height: 30rem; /* Set a fixed height for the container */
+            overflow-y: auto; /* Enable vertical scrollbar */
+            border: 0.2rem solid #ccc;
+            
+        }
+    }
+    @media (max-width:1000px){
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            padding: 1rem;
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+            position: relative;
+          }
+        h3{
+            font-size:2.3rem;
+            margin-left:4.8rem;
+        }
+        #img1{
+            width:20rem;
+            height:20rem;
+            background-size: cover;
+            margin-top:1.8rem;
+            margin-left: 3.5rem;
+            border-radius: 2rem;
+            border: 0.4rem solid yellow;
+        }
+        .FAQ-col-2{
+            flex-basis: 50%;
+            margin-top: 1.3rem;
+            box-shadow: 0 0 1rem rgb(236, 250, 39);
+            margin:1rem 2rem;
+            padding-left: 1.8rem;
+            overflow-y: auto; /* Add this property for a scrollbar */
+            /* max-height: 600px;  */
+            height: 30rem; /* Set a fixed height for the container */
+            overflow-y: auto; /* Enable vertical scrollbar */
+            border: 0.2rem solid #ccc;
+            
+        }
+        .question h4{
+            font-size: 1.2rem;
+        }
+        .answer p{
+            padding-top:0.2rem;
+            line-height: 1.3;
+            font-size: 1rem;
+        }
+        
+        .faq.active .answer{
+            max-height:10rem;
+            animation:fade 1s ease-in-out;
+        }
+    }
+    @media (max-width:900px){
+        #logo{
+            width: 5rem;
+            height: 5rem;
+            margin-right: 0;
+            margin-top: 1rem;
+        }
+        #img1{
+            width:18rem;
+            height:18rem;
+            background-size: cover;
+            margin-top:1.8rem;
+            margin-left: 3.5rem;
+            border-radius: 2rem;
+            border: 0.4rem solid yellow;
+        }
+        .FAQ-col-2{
+            flex-basis: 50%;
+            margin-top: 1.3rem;
+            box-shadow: 0 0 1rem rgb(236, 250, 39);
+            margin:1rem 2rem;
+            padding-left: 1.8rem;
+            overflow-y: auto; /* Add this property for a scrollbar */
+            /* max-height: 600px;  */
+            height: 26rem; /* Set a fixed height for the container */
+            overflow-y: auto; /* Enable vertical scrollbar */
+            border: 0.2rem solid #ccc;
+            
+        }
+        h3{
+            font-size:2.1rem;
+            margin-left:4.8rem;
+        }
+    }
+    @media (max-width:800px){
+        h3{
+            font-size:1.8rem;
+            margin-left:4.8rem;
+        }
+    }
+    @media (max-width:787px){
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1em;
+          }
+    }
+    @media (max-width:780px){
+        #logo{
+            width: 5rem;
+            height: 5rem;
+            margin-right: 0;
+            margin-top: 0.8rem;
+        }
+        /* .menu-toggle {
+            display: block;
+        }
+      
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: #076baa;
+            border-radius:2rem;
+            border:0.2rem solid yellow;
+            position: absolute;
+            top: 5rem;
+            left: 0;
+            width: 94%;
+            padding: 10px 20px;
+            z-index: 1;
+        }
+      
+          .nav-links a {
+            margin-right: 0;
+          }
+      
+          .nav-links.show {
+            display: flex;
+          } */
+
+          .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #6386f9;
+            position: absolute;
+            top: 60px;
+            left: 0;
+        }
+    
+        .nav-links a {
+            padding: 10px 0;
+            text-align: center;
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+        }
+    
+        .menu-toggle {
+            display: block;
+        }
+    
+        .navbar.active .nav-links {
+            display: flex;
+        }
+          .row{
+            display: flex;
+            padding-top:0.5rem;
+        }
+        #img1{
+            width:16rem;
+            height:16rem;
+            background-size: cover;
+            margin-top:1.8rem;
+            margin-left: 3.5rem;
+            border-radius: 2rem;
+            border: 0.4rem solid yellow;
+        }
+        .question h4{
+            font-size: 1.03rem;
+        }
+        .answer p{
+            padding-top:0.2rem;
+            line-height: 1.3;
+            font-size: 1rem;
+        }
+        
+        .faq.active .answer{
+            max-height:10rem;
+            animation:fade 1s ease-in-out;
+        }
+    }
+    @media(max-width:760px)
+    {
+        .question h4{
+            font-size: 1rem;
+        }
+        .answer p{
+            padding-top:0.5rem;
+            line-height: 1.4;
+            font-size: 1rem;
+        }
+    }
+    @media(max-width:730px)
+    {
+        .question h4{
+            font-size: 0.9rem;
+        }
+        .answer p{
+            padding-top:0.5rem;
+            line-height: 1.4;
+            font-size: 1rem;
+        }
+    }
+    @media (max-width:700px){
+        #img1{
+            width:14rem;
+            height:14rem;
+            background-size: cover;
+            margin-top:1.8rem;
+            margin-left: 3rem;
+            border-radius: 2rem;
+            border: 0.4rem solid yellow;
+        }
+        h3{
+            font-size:1.8rem;
+            margin-left:4rem;
+        }
+    }
+    @media (max-width:640px) {
+        #FAQ {
+            padding-top: 2rem;
+            color: white;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 1.3rem;
+            overflow-x: hidden; /* Hide horizontal overflow */
+        }
+        
+        .FAQ-col-1{
+            flex-basis: 50%;
+        }
+        .FAQ-col-2 {
+            flex-basis: 50%;
+            margin: 1.3rem 0; /* Adjust margin for better spacing */
+            box-shadow: 0 0 1rem rgb(236, 250, 39);
+            padding: 1.8rem; /* Adjust padding for better spacing */
+            overflow-y: auto;
+            max-height: calc(100vh - 100px); /* Adjust max-height to fit viewport */
+            border: 0.2rem solid #ccc;
+        }
+        
+        #img1 {
+            width: 20rem; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 1.8rem auto; /* Center horizontally */
+            border-radius: 2rem;
+            border: 0.4rem solid yellow;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            text-align: center; /* Center text */
+            margin: 0; /* Remove default margin */
+        }
+        
+        footer {
+            width: 100%;
+            height: 3rem;
+            margin-top: 3rem;
+            box-shadow: 0 0 1rem rgb(236, 250, 39);
+        }
+    }
+    
+    
+    @media (max-width:520px){
+        #img1{
+            width:19rem;
+            height:19rem;
+            background-size: cover;
+            margin-top:1.8rem;
+            margin-left: 10rem;
+            margin-right: 10rem;
+            border-radius: 2rem;
+            border: 0.4rem solid yellow;
+        }
+    }
+    @media (max-width:430px){
+        .FAQ-col-2{
+            flex-basis: 100%;
+            margin-top: 1rem;
+            box-shadow: 0 0 1rem rgb(236, 250, 39);
+            margin: 2rem;
+            padding-left: 1.8rem;
+            overflow-y: auto; /* Add this property for a scrollbar */
+            /* max-height: 600px;  */
+            height: 30rem; /* Set a fixed height for the container */
+            overflow-y: auto; /* Enable vertical scrollbar */
+            border: 0.2rem solid #ccc;
+            
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top:1.3rem;
+            height:140vh;
+        }
+        #img1{
+            width:17rem;
+            height:17rem;
+            background-size: cover;
+            margin-top:1.8rem;
+            margin-left: 10rem;
+            margin-right: 10rem;
+            border-radius: 2rem;
+            border: 0.4rem solid yellow;
+        }
+    }
+    @media (max-width:395px){
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top:1.3rem;
+            height:165vh;
+        }
+    }
+    @media (max-width:393px){
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top:1.3rem;
+            height:135vh;
+        }
+    }
+    @media (max-width:375px){
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top:1.3rem;
+            height:140vh;
+        }
+    }
+    @media (max-width:365px){
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top:1.3rem;
+            height:130vh;
+        }
+    }
+    @media (max-width:320px){
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top:1.3rem;
+            height:200vh;
+        }
+    }
+    
+}
+}

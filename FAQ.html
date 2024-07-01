@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ page</title>
+    <link rel="stylesheet" href="FAQStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img id="logo" src="Logo.jpg">
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about us.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="FAQ.html">FAQ</a>
+          <a href="contact us.html">Contact Us</a>
+      </div>
+  </nav>
+
+    <div class="FAQ">
+      <div class="container">
+        <div class="row">
+          <div class="FAQ-col-1">
+            <h3>Frequently Asked<br /><span>Question</span></h3>
+            <img id="img1" src="FAQ_img1.jpg" />
+          </div>
+
+          <div class="FAQ-col-2">
+            <div class="faq">
+              <div class="question">
+                <h4>1. What are your working hours?
+                </h4>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                  <path
+                    d="M3 3L21 21L39 3"
+                    stroke="white"
+                    stroke-width="7"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </div>
+              <div class="answer">
+                <p>
+                  We are open from 7:00 AM to 9:00 PM. However you can schedule the pick-up and delivery 24X7 using an app. We are closed on Thursday.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4>2. What should I prepare for the first pickup ?
+                </h4>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                  <path
+                    d="M3 3L21 21L39 3"
+                    stroke="white"
+                    stroke-width="7"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </div>
+              <div class="answer">
+                <p>
+                  Just have your clothes ready. Our Drop -off Van has a Laundry bag to place your loose clothes in. We will then take the order on the Mobile/Tablet and you will get an instant order update with item details. You will also get the updates/status of your laundry.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4>3. How do I have to pay for your services?
+                </h4>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                  <path
+                    d="M3 3L21 21L39 3"
+                    stroke="white"
+                    stroke-width="7"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </div>
+              <div class="answer">
+                <p>
+                  Payment can be made at the time of delivery (COD). Or it can be done through an online payment gateway provided on the app or Paytm
+
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4>4. How fast can I have my clothes back?
+                </h4>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                  <path
+                    d="M3 3L21 21L39 3"
+                    stroke="white"
+                    stroke-width="7"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </div>
+              <div class="answer">
+                <p>
+                  The orders will be delivered on next day for wash & Fold and Wash-Iron & Fold will be delivered on next day. (Except the weekly off and National holiday) We offer this express service @no additional cost.
+
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4>5. Do you have express services?
+                </h4>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                  <path
+                    d="M3 3L21 21L39 3"
+                    stroke="white"
+                    stroke-width="7"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </div>
+              <div class="answer">
+                <p>
+                  Yes. We offer express services on an additional charge.
+                  ( 4 hours )
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <div class="question">
+                <h4>6. What happens if clothes in my order are damaged ?
+                </h4>
+
+                <svg width="15" height="10" viewBox="0 0 42 25">
+                  <path
+                    d="M3 3L21 21L39 3"
+                    stroke="white"
+                    stroke-width="7"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </div>
+              <div class="answer">
+                <p>
+                  Any items determined to have been damaged/lost by us will be reimbursed in accordance with the Fabricare Fair Claims Guide and shall not exceed ten (10) times our charge for cleaning that garment regardless of brand or condition
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        const faqs=document.querySelectorAll(".faq");
+
+        faqs.forEach(faq =>{
+            faq.addEventListener("click",()=>{
+                faq.classList.toggle("active");
+            });
+        });
+
+        
+// document.addEventListener('DOMContentLoaded', function() {
+//     const menuToggle = document.querySelector('.menu-toggle');
+//     const navLinks = document.querySelector('.nav-links');
+
+//     menuToggle.addEventListener('click', function() {
+//         navLinks.classList.toggle('show');
+//     });
+// });
+
+function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active');
+}
+
+    </script>
+
+
+    <footer>
+      <p id="p1">&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing page</title>
+    <link rel="stylesheet" href="pricingStyle.css"></link>
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <img id="logo" src="Logo.jpg">
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="contact us.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- <div id="price">
+        <div class="container">
+                <div class="price-col-1">
+                    <h3>Packages and <span>Pricing</span></h3>
+                </div>
+        </div>
+    </div> -->
+
+    <div id="price">
+        <div>
+            <h1>Pricing</h1>
+            <br>
+        </div>
+    </div>
+
+    <div class="container tablecards">
+        <div class="card animated-card" style="width: 18rem;height:23.5rem;background-color: white;">
+            <img src="iron.jpg" class="card-img-top" alt="..." style="height:13rem;border:0.2rem solid yellow">
+            <div class="card-body">
+              <h3 class="card-title">Ironing</h3>
+              <p class="card-text" style="font-family:Arial, Helvetica, sans-serif;"><b>Our ironing service is available at an affordable rate of just Rs. 10 per cloth.</b></p>
+            </div>
+          </div>
+
+          <div class="card animated-card" style="width: 18rem;height:23.5rem;background-color: white;">
+            <img src="drycleaning.jpg" class="card-img-top" alt="..." style="height:13rem;border:0.2rem solid yellow">
+            <div class="card-body">
+              <h3 class="card-title">Dry Cleaning</h3>
+              <p class="card-text"><b>Dry cleaning costs vary by garment and treatment: Rs. 60 for a shirt, trouser, or top; Rs. 150 for a dress; and Rs. 250 for a saree.</b></p>
+            </div>
+          </div>
+
+          <div class="card animated-card" style="width: 18rem;height:23.5rem;background-color: white;">
+            <img src="softwner.jpg" class="card-img-top" alt="..." style="height:13rem;border:0.2rem solid yellow">
+            <div class="card-body">
+              <h3 class="card-title">Softwner</h3>
+              <p class="card-text"><b>We prewash all soiled clothes and include fabric softener by default, all at no extra charge.</b></p>
+            </div>
+          </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container tablecards">
+        <div class="card animated-card" style="width: 18rem;height:23.5rem;background-color: white;">
+            <img src="laundrybag.png" class="card-img-top" alt="..." style="height:13rem;border:0.2rem solid yellow">
+            <div class="card-body">
+              <h3 class="card-title">Laundry Bag</h3>
+              <p class="card-text"><b>We provide a laundry bag for Rs. 60, and after reaching 30 kgs of laundry, Rs. 30 will be redeemed from your bill.</b></p>
+            </div>
+          </div>
+
+          <div class="card animated-card" style="width: 18rem;height:23.5rem;background-color: white;">
+            <img src="delivery.jpg" class="card-img-top" alt="..." style="height:13rem;border:0.2rem solid yellow">
+            <div class="card-body">
+              <h3 class="card-title">Delivery</h3>
+              <p class="card-text"><b>Take advantage of our 24/7 laundry drop-off facility for just Rs. 60 per kg.</b></p>
+            </div>
+          </div>
+
+    </div>
+
+    <footer class="footer  py-3 mt-auto">
+        <div class="container">
+            <span>&copy; 2024 Your Company Name. All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script>
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     const menuToggle = document.querySelector('.menu-toggle');
+        //     const navLinks = document.querySelector('.nav-links');
+        
+        //     menuToggle.addEventListener('click', function() {
+        //         navLinks.classList.toggle('show');
+        //     });
+        // });
+
+        function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active');
+}
+
+    </script>
+   
+</body>
+</html>

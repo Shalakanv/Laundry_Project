@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services page</title>
+    <link rel="stylesheet" href="servicesStyle.css" />
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <img id="logo" src="Logo.jpg" />
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="contact us.html">Contact Us</a>
+      </div>
+    </nav>
+
+    <div id="services">
+      <div class="container">
+        <div class="row">
+          <div class="services-col-1">
+            <h3 id="para">Our<br /><span>Services</span></h3>
+          </div>
+          <div class="services-col-2">
+            <p style="font-family:Arial, Helvetica, sans-serif;">
+              At Mein Wasche, we offer a comprehensive range of laundry services tailored to meet your needs. Enjoy professional washing with state-of-the-art machines, meticulous <span style="font-size:1.2rem;">ironing</span> for wrinkle-free garments, and specialized <span style="font-size:1.2rem;">dry cleaning</span> for delicate fabrics. Our <span style="font-size:1.2rem;">fabric softener service</span>, provided at no extra charge, ensures your clothes are incredibly soft and fresh. Additionally, our convenient 24/7 delivery service guarantees your clean clothes are delivered right to your doorstep, saving you time and effort. Trust us to provide top-quality care for all your laundry needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <div class="row1">
+          <div class="box" id="img1">
+            <div class="text">
+              <h2>Ironing</h2>
+              Our delivery service brings your freshly cleaned clothes right to your doorstep, providing fast, reliable, and hassle-free convenience
+              </div>
+          </div>
+          <div class="box" id="img2">
+            <div class="text">
+              <h2>Dry Cleaning</h2>
+              Experience superior care with our advanced, gentle dry cleaning, leaving your delicate fabrics fresh and immaculate.
+            </div>
+          </div>
+          <div class="box" id="img3">
+            <div class="text">
+              <h2>Softwner</h2>
+              Enhance the comfort of your clothes with our premium fabric softener service, leaving your garments incredibly soft and fresh.
+            </div>
+          </div>
+          <div class="box" id="img4">
+            <div class="text">
+              <h2>Delivery</h2>
+              Our delivery service brings freshly cleaned clothes to your doorstep, offering fast,reliable and hassle-free convenience.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <p id="p1">&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   const menuToggle = document.querySelector(".menu-toggle");
+      //   const navLinks = document.querySelector(".nav-links");
+
+      //   menuToggle.addEventListener("click", function () {
+      //     navLinks.classList.toggle("show");
+      //   });
+      // });
+
+      function toggleMenu() {
+    const navbar = document.querySelector('.navbar');
+    navbar.classList.toggle('active');
+}
+
+    </script>
+  </body>
+</html>
